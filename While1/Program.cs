@@ -17,9 +17,10 @@ internal class Program
     {
         int i = 1;
         double res = 0;
-        while (i++ != n)
+        while (i != n + 1)
         {
             res += Math.Pow(-1, i) / (2*i + 1);
+            i++;
         }
         return res;
     }
@@ -27,8 +28,9 @@ internal class Program
     {
         int i = 1;
         double res = 0;
-        while (i++ != n) {
-            res += 1 + 1 / Math.Pow(1, i);
+        while (i != n + 1) {
+            res += 1 + 1 / Math.Pow(i, 2);
+            i++;
         }
         return res;
     }
